@@ -1,0 +1,102 @@
+/* Base styles for the navbar */
+.navbar {
+    padding: 1rem;
+    position: relative;
+}
+
+/* Default: Show desktop logo, buttons, and dropdown */
+.desktop-logo {
+    display: block; /* Display the desktop logo */
+}
+.mobile-logo {
+    display: none; /* Hide the mobile logo by default */
+}
+
+/* Show buttons section */
+.buttons-section {
+    display: block; /* Display the buttons on desktop */
+}
+
+/* Customize the background color and border */
+.dropdown-menu {
+    display: block;
+    background-color: white; /* Set a custom background color */
+    min-width: 300px; /* Set minimum width for the dropdown box */
+    position: absolute;
+    top: calc(100% + 22px); /* Position the dropdown below the navbar */
+    border: none; /* Remove border */
+    border-radius: 0; /* Remove rounded edges */
+    z-index: 1000;
+}
+
+/* Change the padding and font styles of the dropdown items */
+.dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1860CD; /* Item color */
+}
+
+/* Change hover effect for dropdown items */
+.dropdown-menu .dropdown-item:hover {
+    color: #054752; /* Change text color on hover */
+    background-color: white; /* Change background on hover */
+}
+
+/* Customize the dropdown when it's open */
+.dropdown-menu.show {
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Optionally, customize dropdown menu positioning */
+.dropdown-menu-end {
+    right: 0; /* Position dropdown to the right */
+}
+
+/* Adjust the dropdown for mobile */
+.dropdown {
+    margin-right: 100px; /* Right margin for desktop */
+}
+
+@media (max-width: 767.98px) { 
+    /* Mobile styles */
+    .desktop-logo {
+        display: none; /* Hide desktop logo on mobile */
+    }
+
+    .buttons-section {
+        display: none; /* Hide buttons on mobile */
+    }
+
+    /* Show the mobile logo */
+    .mobile-logo {
+        display: block; /* Display mobile logo */
+    }
+
+    /* Hide the navbar toggler button, since it's not needed anymore */
+    .navbar-toggler {
+        display: none; /* Hide toggler button */
+    }
+
+    /* Adjust the dropdown for mobile */
+    .dropdown {
+        margin-right: 0; /* Remove right margin for mobile */
+    }
+}
+
+/* Navbar link styles */
+.nav-link {
+    color: #1860CD; /* Link color */
+    font-weight: 700; /* Link font weight */
+}
+
+.nav-item a:hover {
+    color: #054752; /* Change color on hover */
+}
+
+i {
+    color: #1860CD; /* Icon color */
+}
+
+  
+  

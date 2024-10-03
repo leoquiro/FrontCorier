@@ -1,0 +1,122 @@
+[
+     {
+        "iata": "DXB",
+        "name": "Dubai International Airport",
+        "city": "Dubai",
+        "country": "UAE"
+    },
+     {
+        "iata": "LHR",
+        "name": "London Heathrow Airport",
+        "city": "London",
+        "country": "UK"
+    },
+     {
+        "iata": "AMS",
+        "name": "Amsterdam Schiphol Airport",
+        "city": "Amsterdam",
+        "country": "Netherlands"
+    },
+     {
+        "iata": "CDG",
+        "name": "Paris Charles de Gaulle Airport",
+        "city": "Paris",
+        "country": "France"
+    },
+     {
+        "iata": "IST",
+        "name": "Istanbul Airport",
+        "city": "Istanbul",
+        "country": "Turkey"
+    },
+     {
+        "iata": "DOH",
+        "name": "Doha Hamad International Airport",
+        "city": "Doha",
+        "country": "Qatar"
+    },
+     {
+        "iata": "FRA",
+        "name": "Frankfurt Airport",
+        "city": "Frankfurt",
+        "country": "Germany"
+    },
+     {
+        "iata": "SIN",
+        "name": "Singapore Changi Airport",
+        "city": "Singapore",
+        "country": "Singapore"
+    },
+     {
+        "iata": "ICN",
+        "name": "Incheon International Airport",
+        "city": "Seoul",
+        "country": "South Korea"
+    },
+     {
+        "iata": "HKG",
+        "name": "Hong Kong International Airport",
+        "city": "Hong Kong",
+        "country": "Hong Kong"
+    },
+     {
+        "iata": "MAD",
+        "name": "Madrid-Barajas Adolfo Su\u00e1rez Airport",
+        "city": "Madrid",
+        "country": "Spain"
+    },
+     {
+        "iata": "BKK",
+        "name": "Bangkok Suvarnabhumi Airport",
+        "city": "Bangkok",
+        "country": "Thailand"
+    },
+     {
+        "iata": "KUL",
+        "name": "Kuala Lumpur International Airport",
+        "city": "Kuala Lumpur",
+        "country": "Malaysia"
+    },
+     {
+        "iata": "MUC",
+        "name": "Munich Airport",
+        "city": "Munich",
+        "country": "Germany"
+    },
+     {
+        "iata": "FCO",
+        "name": "Rome Fiumicino Airport",
+        "city": "Rome",
+        "country": "Italy"
+    },
+     {
+        "iata": "ZRH",
+        "name": "Zurich Airport",
+        "city": "Zurich",
+        "country": "Switzerland"
+    },
+     {
+        "iata": "BCN",
+        "name": "Barcelona-El Prat Airport",
+        "city": "Barcelona",
+        "country": "Spain"
+    },
+     {
+        "iata": "YYZ",
+        "name": "Toronto Pearson International Airport",
+        "city": "Toronto",
+        "country": "Canada"
+    },
+     {
+        "iata": "VIE",
+        "name": "Vienna International Airport",
+        "city": "Vienna",
+        "country": "Austria"
+    },
+     {
+        "iata": "LAX",
+        "name": "Los Angeles International Airport",
+        "city": "Los Angeles",
+        "country": "USA"
+    }
+]

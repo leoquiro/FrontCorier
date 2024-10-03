@@ -1,0 +1,78 @@
+<!-- <div class="container mt-5">
+    <h2 class="text-center">Flight Search</h2>
+    <form (ngSubmit)="onSearch()" class="row g-3 justify-content-center">
+      <div class="col-md-4">
+        <label for="from" class="form-label">From</label>
+        <input type="text" id="from" class="form-control" [(ngModel)]="from" name="from" required>
+      </div>
+      
+      <div class="col-md-4">
+        <label for="to" class="form-label">To</label>
+        <input type="text" id="to" class="form-control" [(ngModel)]="to" name="to" required>
+      </div>
+      
+      <div class="col-md-4">
+        <label for="date" class="form-label">Date</label>
+        <input type="date" id="date" class="form-control" [(ngModel)]="date" name="date" required>
+      </div>
+      
+      <div class="col-md-4 text-center">
+        <button type="submit" class="btn btn-primary mt-4">Search</button>
+      </div>
+    </form>
+  
+    <div *ngIf="airports.length > 0" class="mt-4">
+      <h4>Available Flights:</h4>
+      <ul class="list-group">
+        <li *ngFor="let airport of airports" class="list-group-item">
+          {{ airport.name }} ({{ airport.iata }}) - {{ airport.city }}, {{ airport.country }}
+        </li>
+      </ul>
+    </div>
+  </div> -->
+  <!-- src/app/main-search/main-search.component.html -->
+  <form (ngSubmit)="searchFlights()">
+    <label for="departure">Departure Airport (IATA):</label>
+    <input type="text" [(ngModel)]="dep_iata" name="departure" 
+           (input)="filterAirports(dep_iata)" required>
+    <ul *ngIf="filteredAirports.length > 0" class="suggestions">
+      <li *ngFor="let airport of filteredAirports" (click)="dep_iata = airport.code; filteredAirports = []">
+        {{ airport.code }} - {{ airport.name }}
+      </li>
+    </ul>
+  
+    <label for="arrival">Arrival Airport (IATA):</label>
+    <input type="text" [(ngModel)]="arr_iata" name="arrival" 
+           (input)="filterAirports(arr_iata)" required>
+    <ul *ngIf="filteredAirports.length > 0" class="suggestions">
+      <li *ngFor="let airport of filteredAirports" (click)="arr_iata = airport.code; filteredAirports = []">
+        {{ airport.code }} - {{ airport.name }}
+      </li>
+    </ul>
+  
+    <label for="date">Flight Date:</label>
+    <input type="date" [(ngModel)]="date" name="date" required>
+  
+    <button type="submit">Search Flights</button>
+  </form>
+  
+  <style>
+    .suggestions {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      border: 1px solid #ccc;
+      position: absolute;
+      background: white;
+      z-index: 1000;
+      width: 100%;
+    }
+    .suggestions li {
+      padding: 8px;
+      cursor: pointer;
+    }
+    .suggestions li:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+  
