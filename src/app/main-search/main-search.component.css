@@ -1,15 +1,147 @@
-/* .container {
-    max-width: 800px;
+.search-bar {
+  display: flex;
+  align-items: center; 
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px; 
+  margin: 20px auto; 
+}
+
+.input-group {
+  position: relative;
+  flex: 1;
+  margin: 0; 
+}
+
+
+.search-bar > *:not(:last-child) {
+  margin-right: 0;
+}
+
+input[type="text"], input[type="date"] {
+  width: 130%;
+  padding: 12px;
+  font-size: 16px;
+  border: none; 
+  border-radius: 0; 
+  box-sizing: border-box;
+  background-color: transparent; 
+  transition: background-color 0.3s ease; 
+}
+
+
+input[type="text"]:focus, input[type="date"]:focus {
+  background-color: #f0f0f0; 
+  outline: none; 
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.suggestions {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background: white;
+  z-index: 1000;
+  width: 100%;
+  top: 50px; 
+  border-radius: 8px;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
+.search-btn {
+  background-color: #1860CD;
+  color: white;
+  padding: 12px 20px; 
+  border: none; 
+  border-radius: 0; 
+  transition: background-color 0.3s ease; 
+}
+
+/* Add rounded corners to the first and last elements */
+.input-group:first-child input {
+  border-radius: 8px 0 0 8px; /* Rounded left corners for the first input */
+}
+
+.input-group:last-child input {
+  border-radius: 0 8px 8px 0; /* Rounded right corners for the last button */
+}
+
+.search-btn {
+  border-radius: 0 8px 8px 0; /* Rounded right corners for the button */
+}
+
+.search-btn:hover {
+  background-color: #1860CD;
+}
+
+.suggestions {
+  list-style-type: none;
+  padding: 0 ;
+  margin: 0;
+  border: 1px solid #ccc;
+  position: absolute;
+  background: white;
+  z-index: 1000;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestions li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.input-group {
+  position: relative; /* Keep position relative for absolute positioning of suggestions */
+  flex: 1; /* Allow this to take available space */
+}
+
+.suggestion-item {
+  padding: 10px; /* Increased padding for better spacing */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  border-bottom: 1px solid #eee; /* Subtle separator between items */
+}
+
+.suggestion-item:hover {
+  background-color: #e8f0fe; /* Change color on hover for better visibility */
+}
+
+.airport-info {
+  font-size: 12px; /* Smaller font for additional information */
+  color: #666; /* Lighter color for the text */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column; /* Stack items vertically */
   }
-  
-  h2 {
-    margin-bottom: 20px;
+
+  .input-group:first-child input {
+    border-radius: 8px; /* Full rounding for mobile view */
   }
-  
-  .list-group-item {
-    cursor: pointer;
+
+  .input-group:last-child input,
+  .search-btn {
+    border-radius: 8px; /* Full rounding for mobile view */
   }
-  
-  .list-group-item:hover {
-    background-color: #f8f9fa;
-  } */
+}
