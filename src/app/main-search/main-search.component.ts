@@ -1,36 +1,48 @@
+// main-search.component.ts
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
 import { MainSearchService } from './main-search.service';
+import { OutsideClickDirective } from '../directives/outside-click.directive';
+
 
 @Component({
   selector: 'app-main-search',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './main-search.component.html',
   styleUrls: ['./main-search.component.css'],
-  imports: [FormsModule, CommonModule]
+  imports: [
+    FormsModule,
+    CommonModule,
+    OutsideClickDirective,
+  ],
 })
 export class MainSearchComponent implements OnInit {
   dep_iata: string = ''; // Departure IATA code
   arr_iata: string = ''; // Arrival IATA code
   dep_name: string = ''; // Departure Airport Name
   arr_name: string = ''; // Arrival Airport Name
-  date: string = '';     // Flight date
+  date: string = ''; // Flight date
   filteredDepAirports: any[] = []; // Array for filtered departure airport suggestions
   filteredArrAirports: any[] = []; // Array for filtered arrival airport suggestions
   allAirports: any[] = []; // Array to hold all airport data
 
-  constructor(private router: Router, private mainSearchService: MainSearchService) {}
+  constructor(
+    private router: Router,
+    private mainSearchService: MainSearchService
+  ) {}
 
   ngOnInit() {
     this.fetchAirports(); // Fetch airports once when the component initializes
-}
+  }
 
   fetchAirports() {
     // Fetch the airport data from the JSON file
-    if (this.allAirports.length === 0) { // Check if data has already been fetched
-      this.mainSearchService.getAirports().subscribe(data => {
+    if (this.allAirports.length === 0) {
+      // Check if data has already been fetched
+      this.mainSearchService.getAirports().subscribe((data) => {
         this.allAirports = data; // Store the fetched airport data
       });
     }
@@ -38,54 +50,63 @@ export class MainSearchComponent implements OnInit {
 
   searchFlights() {
     this.router.navigate(['/results'], {
-      queryParams: { dep_iata: this.dep_iata, arr_iata: this.arr_iata, date: this.date }
+      queryParams: {
+        dep_iata: this.dep_iata,
+        arr_iata: this.arr_iata,
+        date: this.date,
+      },
     });
   }
 
-  // Method to filter departure airport suggestions based on user input
   filterDepAirports(input: string) {
-    // No need to fetch airports every time
     if (!this.allAirports || this.allAirports.length === 0) {
-        return; // Exit early if no airports are available
+      return; // Exit early if no airports are available
     }
 
     if (input) {
-        const lowerCaseInput = input.toLowerCase();
-        this.filteredDepAirports = this.allAirports.filter(airport => {
-            const matchesName = airport.name && airport.name.toLowerCase().includes(lowerCaseInput);
-            const matchesIATA = airport.iata && airport.iata.toLowerCase().includes(lowerCaseInput);
-            const matchesCity = airport.city && airport.city.toLowerCase().includes(lowerCaseInput);
-            const matchesCountry = airport.country && airport.country.toLowerCase().includes(lowerCaseInput);
-            
-            return matchesName || matchesIATA || matchesCity || matchesCountry;
-        });
-    } else {
-        this.filteredDepAirports = []; // Clear the suggestions if there's no input
-    }
-}
+      const lowerCaseInput = input.toLowerCase();
+      this.filteredDepAirports = this.allAirports.filter((airport) => {
+        const matchesName =
+          airport.name && airport.name.toLowerCase().includes(lowerCaseInput);
+        const matchesIATA =
+          airport.iata && airport.iata.toLowerCase().includes(lowerCaseInput);
+        const matchesCity =
+          airport.city && airport.city.toLowerCase().includes(lowerCaseInput);
+        const matchesCountry =
+          airport.country &&
+          airport.country.toLowerCase().includes(lowerCaseInput);
 
+        return matchesName || matchesIATA || matchesCity || matchesCountry;
+      });
+    } else {
+      this.filteredDepAirports = []; // Clear the suggestions if there's no input
+    }
+  }
 
   filterArrAirports(input: string) {
-    // No need to fetch airports every time
     if (!this.allAirports || this.allAirports.length === 0) {
-        return; // Exit early if no airports are available
+      return; // Exit early if no airports are available
     }
 
     if (input) {
-        const lowerCaseInput = input.toLowerCase();
-        this.filteredArrAirports = this.allAirports.filter(airport => {
-            const matchesName = airport.name && airport.name.toLowerCase().includes(lowerCaseInput);
-            const matchesIATA = airport.iata && airport.iata.toLowerCase().includes(lowerCaseInput);
-            const matchesCity = airport.city && airport.city.toLowerCase().includes(lowerCaseInput);
-            const matchesCountry = airport.country && airport.country.toLowerCase().includes(lowerCaseInput);
-            
-            return matchesName || matchesIATA || matchesCity || matchesCountry;
-        });
-    } else {
-        this.filteredArrAirports = []; // Clear the suggestions if there's no input
-    }
-}
+      const lowerCaseInput = input.toLowerCase();
+      this.filteredArrAirports = this.allAirports.filter((airport) => {
+        const matchesName =
+          airport.name && airport.name.toLowerCase().includes(lowerCaseInput);
+        const matchesIATA =
+          airport.iata && airport.iata.toLowerCase().includes(lowerCaseInput);
+        const matchesCity =
+          airport.city && airport.city.toLowerCase().includes(lowerCaseInput);
+        const matchesCountry =
+          airport.country &&
+          airport.country.toLowerCase().includes(lowerCaseInput);
 
+        return matchesName || matchesIATA || matchesCity || matchesCountry;
+      });
+    } else {
+      this.filteredArrAirports = []; // Clear the suggestions if there's no input
+    }
+  }
 
   selectAirport(airport: any, type: string) {
     if (type === 'departure') {
@@ -98,5 +119,13 @@ export class MainSearchComponent implements OnInit {
     this.filteredDepAirports = []; // Clear suggestions after selection
     this.filteredArrAirports = []; // Clear suggestions after selection
   }
-}
 
+  closeSuggestions() {
+    this.filteredDepAirports = [];
+    this.filteredArrAirports = [];
+  }
+
+  closeDatePicker() {
+    // Logic to close the date picker if necessary
+  }
+}

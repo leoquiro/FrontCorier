@@ -1,27 +1,48 @@
+/* main-search.component.css */
+.background-image {
+  background-image: url('../../../public/background.svg');
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  height: 100vh; /* Sets the height to fill the viewport */
+  width: 100%; /* Sets the width to fill the viewport */
+  position: relative; /* Positions child elements accordingly */
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+
+.full-width-image {
+  width: 100%; /* Makes the image take the full width */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Removes any inline spacing */
+}
 .search-bar {
   display: flex;
   align-items: center; 
   background-color: #f9f9f9;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px; 
+  width: 1400px; 
+  height: 80px;
   margin: 20px auto; 
+  position: relative;
+  z-index: 1;
 }
-
 .input-group {
   position: relative;
   flex: 1;
   margin: 0; 
 }
 
-
 .search-bar > *:not(:last-child) {
   margin-right: 0;
 }
 
 input[type="text"], input[type="date"] {
-  width: 130%;
+  width: 350px;
   padding: 12px;
+  height: 80px;
   font-size: 16px;
   border: none; 
   border-radius: 0; 
@@ -29,7 +50,6 @@ input[type="text"], input[type="date"] {
   background-color: transparent; 
   transition: background-color 0.3s ease; 
 }
-
 
 input[type="text"]:focus, input[type="date"]:focus {
   background-color: #f0f0f0; 
@@ -44,60 +64,33 @@ input[type="text"]::placeholder {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  position: absolute;
-  background: white;
-  z-index: 1000;
-  width: 100%;
-  top: 50px; 
-  border-radius: 8px;
-}
-
-.suggestions li {
-  padding: 10px;
-  cursor: pointer;
-}
-
-.suggestions li:hover {
-  background-color: #f0f0f0;
-}
-
-.search-btn {
-  background-color: #1860CD;
-  color: white;
-  padding: 12px 20px; 
-  border: none; 
-  border-radius: 0; 
-  transition: background-color 0.3s ease; 
-}
-
-/* Add rounded corners to the first and last elements */
-.input-group:first-child input {
-  border-radius: 8px 0 0 8px; /* Rounded left corners for the first input */
-}
-
-.input-group:last-child input {
-  border-radius: 0 8px 8px 0; /* Rounded right corners for the last button */
-}
-
-.search-btn {
-  border-radius: 0 8px 8px 0; /* Rounded right corners for the button */
-}
-
-.search-btn:hover {
-  background-color: #1860CD;
-}
-
-.suggestions {
-  list-style-type: none;
-  padding: 0 ;
-  margin: 0;
   border: 1px solid #ccc;
   position: absolute;
   background: white;
   z-index: 1000;
   width: 100%;
   max-height: 200px;
-  overflow-y: auto;
+  overflow-y: auto; 
+  top: 50px; 
+  border-radius: 8px;
+}
+
+.suggestions::-webkit-scrollbar {
+  width: 8px;
+}
+
+.suggestions::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.suggestions::-webkit-scrollbar-thumb {
+  background: #1860CD;
+  border-radius: 4px; /* Adjusted for rounded corners */
+}
+
+.suggestions {
+  scrollbar-width: thin; 
+  scrollbar-color: #1860CD transparent; 
 }
 
 .suggestions li {
@@ -106,42 +99,64 @@ input[type="text"]::placeholder {
 }
 
 .suggestions li:hover {
-  background-color: #f0f0f0; /* Highlight on hover */
-}
-
-.input-group {
-  position: relative; /* Keep position relative for absolute positioning of suggestions */
-  flex: 1; /* Allow this to take available space */
+  background-color: #f0f0f0;
 }
 
 .suggestion-item {
-  padding: 10px; /* Increased padding for better spacing */
+  padding: 10px;
   cursor: pointer;
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
-  border-bottom: 1px solid #eee; /* Subtle separator between items */
+  transition: background-color 0.3s;
+  border-bottom: 1px solid #eee; 
 }
 
 .suggestion-item:hover {
-  background-color: #e8f0fe; /* Change color on hover for better visibility */
+  background-color: #e8f0fe; 
+}
+
+.search-btn {
+  background-color: #1860CD;
+  color: white;
+  padding: 12px 20px;
+  height: 80px; 
+  border: none; 
+  border-radius: 0 8px 8px 0; 
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #0e4ea1; /* Change on hover for visibility */
+}
+
+.input-group:first-child input {
+  border-radius: 8px 0 0 8px; 
+}
+
+.input-group:last-child input {
+  border-radius: 0 8px 8px 0; 
 }
 
 .airport-info {
-  font-size: 12px; /* Smaller font for additional information */
-  color: #666; /* Lighter color for the text */
+  font-size: 12px; 
+  color: #666; 
+}
+
+.iata-code {
+  font-size: 24px; 
+  font-weight: lighter; 
 }
 
 /* Media query for responsiveness */
 @media (max-width: 768px) {
   .search-bar {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
   }
 
   .input-group:first-child input {
-    border-radius: 8px; /* Full rounding for mobile view */
+    border-radius: 8px; 
   }
 
   .input-group:last-child input,
   .search-btn {
-    border-radius: 8px; /* Full rounding for mobile view */
+    border-radius: 8px; 
   }
 }

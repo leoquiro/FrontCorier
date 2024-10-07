@@ -1,52 +1,54 @@
-<form (ngSubmit)="searchFlights()" class="search-bar">
-  <div class="input-group">
-    <input
-      type="text"
-      placeholder="From"
-      [(ngModel)]="dep_name" 
-      name="departure"
-      (focus)="filterDepAirports(dep_name)" 
-      (input)="filterDepAirports(dep_name)" 
-      required
-    />
-    <ul *ngIf="filteredDepAirports.length > 0" class="suggestions">
-      <li
-        *ngFor="let airport of filteredDepAirports"
-        (click)="selectAirport(airport, 'departure')"
-        class="suggestion-item"
-      >
-        <strong>{{ airport.iata }}</strong> - {{ airport.name }} <br />
-        <span class="airport-info">{{ airport.city }}, {{ airport.country }}</span>
-      </li>
-    </ul>
-  </div>
-
-  <div class="input-group">
-    <input
-      type="text"
-      placeholder="To"
-      [(ngModel)]="arr_name" 
-      name="arrival"
-      (focus)="filterArrAirports(arr_name)" 
-      (input)="filterArrAirports(arr_name)" 
-      required
-    />
-    <ul *ngIf="filteredArrAirports.length > 0" class="suggestions">
-      <li
-        *ngFor="let airport of filteredArrAirports"
-        (click)="selectAirport(airport, 'arrival')"
-        class="suggestion-item"
-      >
-        <strong>{{ airport.iata }}</strong> - {{ airport.name }} <br />
-        <span class="airport-info">{{ airport.city }}, {{ airport.country }}</span>
-      </li>
-    </ul>
-  </div>
-
-  <div class="input-group">
-    <input type="date" [(ngModel)]="date" name="date" required />
-  </div>
-
-  <button type="submit" class="search-btn">Search Flights</button>
-</form>
+<div class="background-image">
+  <form (ngSubmit)="searchFlights()" class="search-bar">
+    <div class="input-group" appOutsideClick (outsideClick)="closeSuggestions()">
+      <input
+        type="text"
+        placeholder="From"
+        [(ngModel)]="dep_name" 
+        name="departure"
+        (focus)="filterDepAirports(dep_name)" 
+        (input)="filterDepAirports(dep_name)" 
+        required
+      />
+      <ul *ngIf="filteredDepAirports.length > 0" class="suggestions">
+        <li
+          *ngFor="let airport of filteredDepAirports"
+          (click)="selectAirport(airport, 'departure')"
+          class="suggestion-item"
+        >
+          <strong class="iata-code">{{ airport.iata }}</strong> - {{ airport.name }} <br />
+          <span class="airport-info">{{ airport.city }}, {{ airport.country }}</span>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="input-group">
+      <input
+        type="text"
+        placeholder="To"
+        [(ngModel)]="arr_name" 
+        name="arrival"
+        (focus)="filterArrAirports(arr_name)" 
+        (input)="filterArrAirports(arr_name)" 
+        required
+      />
+      <ul *ngIf="filteredArrAirports.length > 0" class="suggestions">
+        <li
+          *ngFor="let airport of filteredArrAirports"
+          (click)="selectAirport(airport, 'arrival')"
+          class="suggestion-item"
+        >
+          <strong class="iata-code">{{ airport.iata }}</strong> - {{ airport.name }} <br />
+          <span class="airport-info">{{ airport.city }}, {{ airport.country }}</span>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="input-group" appOutsideClick (outsideClick)="closeDatePicker()">
+      <input type="date" [(ngModel)]="date" name="date" required />
+    </div>
+  
+    <button type="submit" class="search-btn">Search Flights</button>
+  </form>
+</div>
 

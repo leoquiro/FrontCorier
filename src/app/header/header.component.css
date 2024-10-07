@@ -90,6 +90,10 @@
     font-weight: 700; /* Link font weight */
 }
 
+
+.nav-item {
+    font-size: 20px;
+}
 .nav-item a:hover {
     color: #054752; /* Change color on hover */
 }

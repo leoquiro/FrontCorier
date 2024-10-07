@@ -3,7 +3,7 @@
         "iata": "ATL",
         "name": "Hartsfield-Jackson Atlanta International Airport",
         "city": "Atlanta",
-        "country": "USA"
+        "country": "United States"
     },
     {
         "iata": "PEK",
@@ -21,7 +21,7 @@
         "iata": "DXB",
         "name": "Dubai International Airport",
         "city": "Dubai",
-        "country": "UAE"
+        "country": "United Arab Emirates"
     },
     {
         "iata": "DFW",
@@ -51,7 +51,7 @@
         "iata": "LHR",
         "name": "London Heathrow Airport",
         "city": "London",
-        "country": "UK"
+        "country": "United Kingdom"
     },
     {
         "iata": "ORD",
@@ -85,7 +85,7 @@
     },
     {
         "iata": "CDG",
-        "name": "Paris Charles de Gaulle Airport",
+        "name": "Charles de Gaulle Airport",
         "city": "Paris",
         "country": "France"
     },
@@ -103,7 +103,7 @@
     },
     {
         "iata": "ICN",
-        "name": "Seoul Incheon International Airport",
+        "name": "Incheon International Airport",
         "city": "Seoul",
         "country": "South Korea"
     },
@@ -133,13 +133,13 @@
     },
     {
         "iata": "SVO",
-        "name": "Moscow Sheremetyevo International Airport",
+        "name": "Sheremetyevo International Airport",
         "city": "Moscow",
         "country": "Russia"
     },
     {
         "iata": "BKK",
-        "name": "Bangkok Suvarnabhumi Airport",
+        "name": "Suvarnabhumi Airport",
         "city": "Bangkok",
         "country": "Thailand"
     },
@@ -157,7 +157,7 @@
     },
     {
         "iata": "GRU",
-        "name": "Sao Paulo/Guarulhos–Governador André Franco Montoro International Airport",
+        "name": "São Paulo/Guarulhos–Governador André Franco Montoro International Airport",
         "city": "São Paulo",
         "country": "Brazil"
     },
@@ -181,7 +181,7 @@
     },
     {
         "iata": "JED",
-        "name": "Jeddah King Abdulaziz International Airport",
+        "name": "King Abdulaziz International Airport",
         "city": "Jeddah",
         "country": "Saudi Arabia"
     },
@@ -193,7 +193,7 @@
     },
     {
         "iata": "MNL",
-        "name": "Manila Ninoy Aquino International Airport",
+        "name": "Ninoy Aquino International Airport",
         "city": "Manila",
         "country": "Philippines"
     },
@@ -205,7 +205,7 @@
     },
     {
         "iata": "DEL",
-        "name": "Delhi Indira Gandhi International Airport",
+        "name": "Indira Gandhi International Airport",
         "city": "Delhi",
         "country": "India"
     },
@@ -217,7 +217,7 @@
     },
     {
         "iata": "AMS",
-        "name": "Amsterdam Schiphol Airport",
+        "name": "Amsterdam Airport Schiphol",
         "city": "Amsterdam",
         "country": "Netherlands"
     },
@@ -229,7 +229,7 @@
     },
     {
         "iata": "SCL",
-        "name": "Santiago de Chile Comodoro Arturo Merino Benítez International Airport",
+        "name": "Comodoro Arturo Merino Benítez International Airport",
         "city": "Santiago",
         "country": "Chile"
     },
@@ -247,19 +247,19 @@
     },
     {
         "iata": "UIO",
-        "name": "Quito Mariscal Sucre International Airport",
+        "name": "Mariscal Sucre International Airport",
         "city": "Quito",
         "country": "Ecuador"
     },
     {
         "iata": "LIM",
-        "name": "Lima Jorge Chávez International Airport",
+        "name": "Jorge Chávez International Airport",
         "city": "Lima",
         "country": "Peru"
     },
     {
         "iata": "LOS",
-        "name": "Lagos Murtala Muhammed International Airport",
+        "name": "Murtala Muhammed International Airport",
         "city": "Lagos",
         "country": "Nigeria"
     },
@@ -271,13 +271,13 @@
     },
     {
         "iata": "NBO",
-        "name": "Nairobi Jomo Kenyatta International Airport",
+        "name": "Jomo Kenyatta International Airport",
         "city": "Nairobi",
         "country": "Kenya"
     },
     {
         "iata": "ALG",
-        "name": "Algiers Houari Boumediene Airport",
+        "name": "Houari Boumediene Airport",
         "city": "Algiers",
         "country": "Algeria"
     },
@@ -289,7 +289,7 @@
     },
     {
         "iata": "ACC",
-        "name": "Accra Kotoka International Airport",
+        "name": "Kotoka International Airport",
         "city": "Accra",
         "country": "Ghana"
     },
@@ -301,7 +301,7 @@
     },
     {
         "iata": "DAR",
-        "name": "Dar es Salaam Julius Nyerere International Airport",
+        "name": "Julius Nyerere International Airport",
         "city": "Dar es Salaam",
         "country": "Tanzania"
     },
@@ -325,19 +325,19 @@
     },
     {
         "iata": "TUN",
-        "name": "Tunis Carthage International Airport",
+        "name": "Tunis-Carthage International Airport",
         "city": "Tunis",
         "country": "Tunisia"
     },
     {
         "iata": "LAD",
-        "name": "Luanda Quatro de Fevereiro Airport",
+        "name": "Quatro de Fevereiro International Airport",
         "city": "Luanda",
         "country": "Angola"
     },
     {
         "iata": "ABJ",
-        "name": "Abidjan Félix Houphouët-Boigny International Airport",
+        "name": "Félix Houphouët-Boigny International Airport",
         "city": "Abidjan",
         "country": "Ivory Coast"
     },
@@ -367,19 +367,19 @@
     },
     {
         "iata": "TNR",
-        "name": "Antananarivo Ivato International Airport",
+        "name": "Ivato International Airport",
         "city": "Antananarivo",
         "country": "Madagascar"
     },
     {
         "iata": "DSS",
-        "name": "Dakar Blaise Diagne International Airport",
+        "name": "Blaise Diagne International Airport",
         "city": "Dakar",
         "country": "Senegal"
     },
     {
         "iata": "LBV",
-        "name": "Libreville Leon Mba International Airport",
+        "name": "Léon-Mba International Airport",
         "city": "Libreville",
         "country": "Gabon"
     },
@@ -397,19 +397,19 @@
     },
     {
         "iata": "ROB",
-        "name": "Monrovia Roberts International Airport",
+        "name": "Roberts International Airport",
         "city": "Monrovia",
         "country": "Liberia"
     },
     {
         "iata": "FNA",
-        "name": "Freetown Lungi International Airport",
+        "name": "Lungi International Airport",
         "city": "Freetown",
         "country": "Sierra Leone"
     },
     {
         "iata": "LLW",
-        "name": "Lilongwe Kamuzu International Airport",
+        "name": "Kamuzu International Airport",
         "city": "Lilongwe",
         "country": "Malawi"
     },
@@ -463,7 +463,7 @@
     },
     {
         "iata": "ATH",
-        "name": "Athens Eleftherios Venizelos Airport",
+        "name": "Athens International Airport",
         "city": "Athens",
         "country": "Greece"
     },
@@ -475,7 +475,7 @@
     },
     {
         "iata": "OTP",
-        "name": "Bucharest Henri Coandă International Airport",
+        "name": "Henri Coandă International Airport",
         "city": "Bucharest",
         "country": "Romania"
     },
@@ -541,7 +541,7 @@
     },
     {
         "iata": "FCO",
-        "name": "Rome Fiumicino Airport",
+        "name": "Leonardo da Vinci International Airport",
         "city": "Rome",
         "country": "Italy"
     },
@@ -560,7 +560,7 @@
     {
         "iata": "MLA",
         "name": "Malta International Airport",
-        "city": "Valletta",
+        "city": "Luqa",
         "country": "Malta"
     },
     {
@@ -672,32 +672,20 @@
         "country": "Belgium"
     },
     {
-        "iata": "KWI",
-        "name": "Kuwait International Airport",
-        "city": "Kuwait City",
-        "country": "Kuwait"
-    },
-    {
-        "iata": "BKK",
-        "name": "Bangkok Suvarnabhumi Airport",
-        "city": "Bangkok",
-        "country": "Thailand"
-    },
-    {
         "iata": "DAC",
-        "name": "Dhaka Hazrat Shahjalal International Airport",
+        "name": "Hazrat Shahjalal International Airport",
         "city": "Dhaka",
         "country": "Bangladesh"
     },
     {
         "iata": "KBL",
-        "name": "Kabul Hamid Karzai International Airport",
+        "name": "Hamid Karzai International Airport",
         "city": "Kabul",
         "country": "Afghanistan"
     },
     {
         "iata": "KHI",
-        "name": "Karachi Jinnah International Airport",
+        "name": "Jinnah International Airport",
         "city": "Karachi",
         "country": "Pakistan"
     },
@@ -715,7 +703,7 @@
     },
     {
         "iata": "CMB",
-        "name": "Colombo Bandaranaike International Airport",
+        "name": "Bandaranaike International Airport",
         "city": "Colombo",
         "country": "Sri Lanka"
     },
@@ -733,8 +721,326 @@
     },
     {
         "iata": "KTM",
-        "name": "Kathmandu Tribhuvan International Airport",
+        "name": "Tribhuvan International Airport",
         "city": "Kathmandu",
         "country": "Nepal"
+    },
+    {
+        "iata": "CGK",
+        "name": "Soekarno-Hatta International Airport",
+        "city": "Jakarta",
+        "country": "Indonesia"
+    },
+    {
+        "iata": "SGN",
+        "name": "Tan Son Nhat International Airport",
+        "city": "Ho Chi Minh City",
+        "country": "Vietnam"
+    },
+    {
+        "iata": "FIH",
+        "name": "N'djili Airport",
+        "city": "Kinshasa",
+        "country": "DR Congo"
+    },
+    {
+        "iata": "IKA",
+        "name": "Imam Khomeini International Airport",
+        "city": "Tehran",
+        "country": "Iran"
+    },
+    {
+        "iata": "JNB",
+        "name": "O.R. Tambo International Airport",
+        "city": "Johannesburg",
+        "country": "South Africa"
+    },
+    {
+        "iata": "RGN",
+        "name": "Yangon International Airport",
+        "city": "Yangon",
+        "country": "Myanmar"
+    },
+    {
+        "iata": "BOG",
+        "name": "El Dorado International Airport",
+        "city": "Bogotá",
+        "country": "Colombia"
+    },
+    {
+        "iata": "MAD",
+        "name": "Adolfo Suárez Madrid-Barajas Airport",
+        "city": "Madrid",
+        "country": "Spain"
+    },
+    {
+        "iata": "EZE",
+        "name": "Ministro Pistarini International Airport",
+        "city": "Buenos Aires",
+        "country": "Argentina"
+    },
+    {
+        "iata": "KRT",
+        "name": "Khartoum International Airport",
+        "city": "Khartoum",
+        "country": "Sudan"
+    },
+    {
+        "iata": "BGW",
+        "name": "Baghdad International Airport",
+        "city": "Baghdad",
+        "country": "Iraq"
+    },
+    {
+        "iata": "CMN",
+        "name": "Mohammed V International Airport",
+        "city": "Casablanca",
+        "country": "Morocco"
+    },
+    {
+        "iata": "TAS",
+        "name": "Tashkent International Airport",
+        "city": "Tashkent",
+        "country": "Uzbekistan"
+    },
+    {
+        "iata": "SAH",
+        "name": "Sana'a International Airport",
+        "city": "Sana'a",
+        "country": "Yemen"
+    },
+    {
+        "iata": "CCS",
+        "name": "Simón Bolívar International Airport",
+        "city": "Caracas",
+        "country": "Venezuela"
+    },
+    {
+        "iata": "DLA",
+        "name": "Douala International Airport",
+        "city": "Douala",
+        "country": "Cameroon"
+    },
+    {
+        "iata": "FNJ",
+        "name": "Pyongyang Sunan International Airport",
+        "city": "Pyongyang",
+        "country": "North Korea"
+    },
+    {
+        "iata": "SYD",
+        "name": "Sydney Kingsford Smith Airport",
+        "city": "Sydney",
+        "country": "Australia"
+    },
+    {
+        "iata": "NIM",
+        "name": "Diori Hamani International Airport",
+        "city": "Niamey",
+        "country": "Niger"
+    },
+    {
+        "iata": "OUA",
+        "name": "Ouagadougou Airport",
+        "city": "Ouagadougou",
+        "country": "Burkina Faso"
+    },
+    {
+        "iata": "BKO",
+        "name": "Modibo Keita International Airport",
+        "city": "Bamako",
+        "country": "Mali"
+    },
+    {
+        "iata": "NQZ",
+        "name": "Nursultan Nazarbayev International Airport",
+        "city": "Nur-Sultan",
+        "country": "Kazakhstan"
+    },
+    {
+        "iata": "LUN",
+        "name": "Kenneth Kaunda International Airport",
+        "city": "Lusaka",
+        "country": "Zambia"
+    },
+    {
+        "iata": "GUA",
+        "name": "La Aurora International Airport",
+        "city": "Guatemala City",
+        "country": "Guatemala"
+    },
+    {
+        "iata": "DAM",
+        "name": "Damascus International Airport",
+        "city": "Damascus",
+        "country": "Syria"
+    },
+    {
+        "iata": "PNH",
+        "name": "Phnom Penh International Airport",
+        "city": "Phnom Penh",
+        "country": "Cambodia"
+    },
+    {
+        "iata": "NDJ",
+        "name": "N'Djamena International Airport",
+        "city": "N'Djamena",
+        "country": "Chad"
+    },
+    {
+        "iata": "MGQ",
+        "name": "Aden Adde International Airport",
+        "city": "Mogadishu",
+        "country": "Somalia"
+    },
+    {
+        "iata": "HRE",
+        "name": "Robert Gabriel Mugabe International Airport",
+        "city": "Harare",
+        "country": "Zimbabwe"
+    },
+    {
+        "iata": "HAV",
+        "name": "José Martí International Airport",
+        "city": "Havana",
+        "country": "Cuba"
+    },
+    {
+        "iata": "VVI",
+        "name": "Viru Viru International Airport",
+        "city": "Santa Cruz",
+        "country": "Bolivia"
+    },
+    {
+        "iata": "LIS",
+        "name": "Lisbon Portela Airport",
+        "city": "Lisbon",
+        "country": "Portugal"
+    },
+    {
+        "iata": "AMM",
+        "name": "Queen Alia International Airport",
+        "city": "Amman",
+        "country": "Jordan"
+    },
+    {
+        "iata": "ARN",
+        "name": "Stockholm Arlanda Airport",
+        "city": "Stockholm",
+        "country": "Sweden"
+    },
+    {
+        "iata": "SAP",
+        "name": "Ramón Villeda Morales International Airport",
+        "city": "San Pedro Sula",
+        "country": "Honduras"
+    },
+    {
+        "iata": "DYU",
+        "name": "Dushanbe International Airport",
+        "city": "Dushanbe",
+        "country": "Tajikistan"
+    },
+    {
+        "iata": "TLV",
+        "name": "Ben Gurion Airport",
+        "city": "Tel Aviv",
+        "country": "Israel"
+    },
+    {
+        "iata": "PNG",
+        "name": "Jacksons International Airport",
+        "city": "Port Moresby",
+        "country": "Papua New Guinea"
+    },
+    {
+        "iata": "LFW",
+        "name": "Gnassingbé Eyadéma International Airport",
+        "city": "Lomé",
+        "country": "Togo"
+    },
+    {
+        "iata": "ASU",
+        "name": "Silvio Pettirossi International Airport",
+        "city": "Asunción",
+        "country": "Paraguay"
+    },
+    {
+        "iata": "SAL",
+        "name": "Monseñor Óscar Arnulfo Romero International Airport",
+        "city": "San Salvador",
+        "country": "El Salvador"
+    },
+    {
+        "iata": "BGF",
+        "name": "Bangui M'Poko International Airport",
+        "city": "Bangui",
+        "country": "Central African Republic"
+    },
+    {
+        "iata": "EDI",
+        "name": "Edinburgh Airport",
+        "city": "Edinburgh",
+        "country": "Scotland"
+    },
+    {
+        "iata": "SJO",
+        "name": "Juan Santamaría International Airport",
+        "city": "San José",
+        "country": "Costa Rica"
+    },
+    {
+        "iata": "MVD",
+        "name": "Carrasco International Airport",
+        "city": "Montevideo",
+        "country": "Uruguay"
+    },
+    {
+        "iata": "MCT",
+        "name": "Muscat International Airport",
+        "city": "Muscat",
+        "country": "Oman"
+    },
+    {
+        "iata": "KIV",
+        "name": "Chișinău International Airport",
+        "city": "Chișinău",
+        "country": "Moldova"
+    },
+    {
+        "iata": "BZV",
+        "name": "Maya-Maya Airport",
+        "city": "Brazzaville",
+        "country": "Congo"
+    },
+    {
+        "iata": "WDH",
+        "name": "Hosea Kutako International Airport",
+        "city": "Windhoek",
+        "country": "Namibia"
+    },
+    {
+        "iata": "MRU",
+        "name": "Sir Seewoosagur Ramgoolam International Airport",
+        "city": "Plaisance",
+        "country": "Mauritius"
+    },
+    {
+        "iata": "SHO",
+        "name": "King Mswati III International Airport",
+        "city": "Sikhuphe",
+        "country": "Eswatini"
+    },
+    {
+        "iata": "MSU",
+        "name": "Moshoeshoe I International Airport",
+        "city": "Maseru",
+        "country": "Lesotho"
+    },
+    {
+        "iata": "BGI",
+        "name": "Grantley Adams International Airport",
+        "city": "Bridgetown",
+        "country": "Barbados"
     }
 ]
