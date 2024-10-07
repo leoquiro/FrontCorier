@@ -1,13 +1,14 @@
 <div class="background-image">
   <form (ngSubmit)="searchFlights()" class="search-bar">
+    <!-- Departure Airport Input Group -->
     <div class="input-group" appOutsideClick (outsideClick)="closeSuggestions()">
       <input
         type="text"
         placeholder="From"
-        [(ngModel)]="dep_name" 
-        name="departure"
-        (focus)="filterDepAirports(dep_name)" 
-        (input)="filterDepAirports(dep_name)" 
+        [formControl]="depControl" 
+        id="departure-input"
+        (focus)="filterDepAirports(depControl.value)" 
+        (input)="filterDepAirports(depControl.value)" 
         required
       />
       <ul *ngIf="filteredDepAirports.length > 0" class="suggestions">
@@ -21,15 +22,16 @@
         </li>
       </ul>
     </div>
-  
+
+    <!-- Arrival Airport Input Group -->
     <div class="input-group">
       <input
         type="text"
         placeholder="To"
-        [(ngModel)]="arr_name" 
-        name="arrival"
-        (focus)="filterArrAirports(arr_name)" 
-        (input)="filterArrAirports(arr_name)" 
+        id="arrival-input"
+        [formControl]="arrControl"  
+        (focus)="filterArrAirports(arrControl.value)" 
+        (input)="filterArrAirports(arrControl.value)" 
         required
       />
       <ul *ngIf="filteredArrAirports.length > 0" class="suggestions">
@@ -43,12 +45,13 @@
         </li>
       </ul>
     </div>
-  
+
+    <!-- Date Picker Input Group -->
     <div class="input-group" appOutsideClick (outsideClick)="closeDatePicker()">
       <input type="date" [(ngModel)]="date" name="date" required />
     </div>
-  
+
+    <!-- Search Button -->
     <button type="submit" class="search-btn">Search Flights</button>
   </form>
 </div>
-

@@ -24,7 +24,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 1400px; 
-  height: 80px;
+  height: 60px;
   margin: 20px auto; 
   position: relative;
   z-index: 1;
@@ -40,9 +40,9 @@
 }
 
 input[type="text"], input[type="date"] {
-  width: 350px;
+  width: 100%;
   padding: 12px;
-  height: 80px;
+  height: 60px;
   font-size: 16px;
   border: none; 
   border-radius: 0; 
@@ -117,7 +117,7 @@ input[type="text"]::placeholder {
   background-color: #1860CD;
   color: white;
   padding: 12px 20px;
-  height: 80px; 
+  height: 60px; 
   border: none; 
   border-radius: 0 8px 8px 0; 
   transition: background-color 0.3s ease;

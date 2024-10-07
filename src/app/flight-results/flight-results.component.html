@@ -1,17 +1,18 @@
-<!-- src/app/flight-results/flight-results.component.html -->
-<div *ngIf="flights.length > 0">
-    <h2>Flight Results</h2>
-    <ul>
-      <li *ngFor="let flight of flights">
-        Flight Date: {{ flight.flight_date }} - 
-        Departure: {{ flight.departure_airport }} - 
-        Arrival: {{ flight.arrival_airport }} - 
-        Status: {{ flight.flight_status }}
-      </li>
-    </ul>
+<div class="results-container">
+  <h2>Flight Results</h2>
+  <div *ngIf="flights.length > 0" class="flights-list">
+      <div class="flight-card" *ngFor="let flight of flights">
+          <h3>{{ flight.airline }}</h3>
+          <p><strong>Flight Date:</strong> {{ flight.flight_date }}</p>
+          <p><strong>Departure:</strong> {{ flight.departure_airport }}</p>
+          <p><strong>Arrival:</strong> {{ flight.arrival_airport }}</p>
+          <p><strong>Status:</strong> {{ flight.flight_status }}</p>
+          <button>Select Flight</button>
+      </div>
   </div>
-  
   <div *ngIf="flights.length === 0">
-    <p>No flights found for this date or airport.</p>
+      <p>No flights found for this date or airport.</p>
   </div>
+</div>
+
   
